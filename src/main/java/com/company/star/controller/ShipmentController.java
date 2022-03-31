@@ -56,7 +56,7 @@ public class ShipmentController {
 	// --------------------------------GET----------------------------------------------
 	@GetMapping(path = "/", produces = "application/json")
 	public String getAllShipments() {
-		List<Shipment> carriers = shipmentService.getAllShipments();
+		List<Carrier> carriers = carrierService.getAllShipments();
 		return constructResponse(carriers, SUCCESS);
 	}
 
